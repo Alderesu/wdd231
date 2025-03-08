@@ -1,0 +1,463 @@
+:root {
+    /* CSS HEX Colors */
+    --headline-background-color: #1b2332; /* Background color for headlines (black) */
+    --nav-background-color: #1a1a1a; /* Background color for navigation (dark gray) */
+    --header-title-color: #ffffff; /* Color for headers and titles (white) */
+
+    /* Font Families */
+    --poppins-font-family: "Poppins", sans-serif;
+    --inter-font-family: "Inter", sans-serif;
+
+    /* Font Weights */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Font Sizes */
+    --font-size-small: 18px;
+    --font-size-base: 32px;
+    --font-size-large: 25px;
+
+    /* Text Colors */
+    --headline-color-on-white: #ffffff; /* Headlines on a white background (white) */
+    --headline-color-on-color: #ffffff; /* Headlines on a colored background (white) */
+    --paragraph-color-on-white: #ffffff; /* Paragraph text on a white background (white) */
+    --paragraph-color-on-color: #ffffff; /* Paragraph text on a colored background (white) */
+    --paragraph-background-color: #333333; /* Background color for paragraphs (dark gray) */
+
+    /* Navigation Colors */
+    --nav-link-color: #ffffff; /* Link color in navigation (white) */
+    --nav-hover-link-color: #cccccc; /* Hover link color in navigation (light gray) */
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--poppins-font-family);
+}
+
+h3 {
+    font-size: var(--font-size-large);
+    color: white;
+}
+
+p, li {
+    font-family: var(--inter-font-family);
+}
+
+p strong {
+    color: #71a3c1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header */
+header,
+footer {
+    background-color: var(--headline-background-color);
+    color: var(--headline-color-on-color);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    width: auto;
+    height: 141px;
+    box-sizing: border-box;
+    margin: 1.5rem 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+    position: relative; /* Position relative for the shine effect */
+    transform: translatey(0px);
+    overflow: hidden; /* Ensure shine effect doesn't overflow */
+    
+}
+
+.avatar:hover {
+    transform: scale(1.1); /* Enlarge the image */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8); /* Increase shadow on hover */
+}
+
+/* Shine effect */
+.avatar::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.avatar:hover::before {
+    opacity: 1; /* Show shine effect on hover */
+}
+
+
+header h1 {
+    margin-left: -10px;
+    font-size: var(--font-size-base);
+    font-weight: bold;
+}
+
+/* mobile **************************/
+/*Hamburger menu*/
+
+#menu {
+    display: block;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: var(--oxford-blue);
+    color: var(--alice-blue);
+}
+
+#menu {
+    font-family: Roboto, sans-serif;
+    position: absolute;
+    top: 1.6rem;
+    right: 1.5rem;
+    cursor: pointer;
+    border: 0;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: none;
+    font-family: var(--poppins-font-family);
+}
+
+nav a {
+    display: block;
+    color: var(--headline-color-on-color);
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: var(--font-size-small);
+}
+
+nav a:hover:not(.active) {
+    background-color: #303a44;
+    color: white;
+    font-weight: bold;
+     text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px; 
+}
+
+nav a.active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+    font-weight: bold;
+    color: white;
+    background-color: #303a44;
+
+}
+
+.open li {
+    display: block;
+}
+
+#menu.open::before {
+    content: "X";
+}
+/*Content*******************/
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    grid-gap: 1em;
+    margin: 20px;
+    flex: 1;
+}
+
+main section {
+    border-radius: 5px;
+    box-shadow: 6px 4px 8px;
+    margin: 10px auto;
+    background-color: var(--paragraph-background-color);
+    width: fit-content;
+    text-align: center;
+}
+
+section h2 {
+    background-color:  rgba(0, 18, 51, 0.468);
+    color: var(--headline-color-on-color);
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+    font-size: var(--font-size-base);
+    padding: 10px 0;
+}
+
+section ul {
+    padding: 0 40px;
+    margin: 10px 0;
+}
+
+section li {
+    text-align: left;
+    font-size: var(--font-size-small);
+    color: var(--headline-color-on-color);
+}
+
+picture {
+    padding: 10px;
+    max-width: 300px;
+}
+
+section img {
+    height: auto;
+    width: 80%;
+    display: block;
+}
+
+section img {
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+section p {
+    font-size: var(--font-size-small);
+    margin: 0 0 10px 0;
+    color: var(--headline-color-on-white);
+}
+
+.boxcertificate01 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0; 
+}
+
+.boxButton {
+    padding-top: 10px;
+}
+
+.courseButton {
+    flex: 1 1 100%;
+    margin: 5px;
+}
+
+.courseButton {
+    display: inline-block;
+    padding: 0.25rem 1rem;
+    border-radius: 5rem;
+    color: var(--nav-background-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.courseButton:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 5rem;
+    z-index: -2;
+}
+.courseButton:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #71a3c1;
+    transition: all 0.3s;
+    border-radius: 5rem;
+    z-index: -1;
+}
+.courseButton:hover {
+    color: var(--headline-color-on-color);
+}
+.courseButton:hover:before {
+    width: 100%;
+}
+
+.course {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course {
+    border: wheat solid 2px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.course {
+    transition: all 0.3s;
+    position: relative;
+}
+
+.course h3 {
+    font-size: var(--font-size-large);
+    margin: 0;
+    padding: 0;
+}
+
+.courseNoComplete {
+    background-color: var(--alice-blue);
+    color: var(--oxford-blue-3);
+}
+
+.courseComplete {
+    background-color: var(--yale-blue);
+    color: white;
+}
+.course h3 {
+    transition: all 0.3s;
+}
+.course::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(0, 18, 51, 0.468);
+    border-bottom-color: rgba(0, 18, 51, 0.468);
+    transform: scale(0.1, 1);
+}
+.course:hover h3 {
+    letter-spacing: 2px;
+}
+.course:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+.course::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    background-color: rgba(8, 118, 227, 0.1);
+}
+.course:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+}
+
+dialog {
+    border: 1px solid var(--headline-background-color);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    background-color: var(--paragraph-background-color);
+    box-shadow: 0 0 3rem var(--headline-background-color);
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--oxford-blue-3);
+}
+
+/*Footer */
+
+footer {
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+footer p {
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width: 480px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+        padding: 20px;  
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1em;
+        margin: 10px auto;
+    }
+
+    main p {
+        font-size:var(--font-size-small);
+    }
+
+    section {
+        flex-basis: 17em;
+        flex-grow: 1;
+    }
+
+    .boxcertificate01 {
+        width: 650px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+        grid-gap: 1em;
+    }
+
+    .course {
+        padding: 10px;
+    }
+}
