@@ -1,32 +1,26 @@
 :root {
-    /* CSS HEX Colors */
-    --headline-background-color: #1b2332; /* Background color for headlines (black) */
-    --nav-background-color: #1a1a1a; /* Background color for navigation (dark gray) */
-    --header-title-color: #ffffff; /* Color for headers and titles (white) */
+    --headline-background-color: #1b2332;
+    --nav-background-color: #1a1a1a;
+    --header-title-color: #ffffff;
 
-    /* Font Families */
     --poppins-font-family: "Poppins", sans-serif;
     --inter-font-family: "Inter", sans-serif;
 
-    /* Font Weights */
     --font-weight-regular: 400;
     --font-weight-bold: 700;
 
-    /* Font Sizes */
     --font-size-small: 18px;
     --font-size-base: 32px;
     --font-size-large: 25px;
 
-    /* Text Colors */
-    --headline-color-on-white: #ffffff; /* Headlines on a white background (white) */
-    --headline-color-on-color: #ffffff; /* Headlines on a colored background (white) */
-    --paragraph-color-on-white: #ffffff; /* Paragraph text on a white background (white) */
-    --paragraph-color-on-color: #ffffff; /* Paragraph text on a colored background (white) */
-    --paragraph-background-color: #333333; /* Background color for paragraphs (dark gray) */
+    --headline-color-on-white: #ffffff;
+    --headline-color-on-color: #ffffff;
+    --paragraph-color-on-white: #ffffff;
+    --paragraph-color-on-color: #ffffff;
+    --paragraph-background-color: #333333;
 
-    /* Navigation Colors */
-    --nav-link-color: #ffffff; /* Link color in navigation (white) */
-    --nav-hover-link-color: #cccccc; /* Hover link color in navigation (light gray) */
+    --nav-link-color: #ffffff;
+    --nav-hover-link-color: #cccccc;
 }
 
 h1, h2, h3, h4, h5 {
@@ -51,7 +45,6 @@ body {
     flex-direction: column;
 }
 
-/*Header */
 header,
 footer {
     background-color: var(--headline-background-color);
@@ -71,19 +64,17 @@ header {
     margin: 1.5rem 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
-    position: relative; /* Position relative for the shine effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
     transform: translatey(0px);
-    overflow: hidden; /* Ensure shine effect doesn't overflow */
-    
+    overflow: hidden;
 }
 
 .avatar:hover {
-    transform: scale(1.1); /* Enlarge the image */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8); /* Increase shadow on hover */
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 }
 
-/* Shine effect */
 .avatar::before {
     content: '';
     position: absolute;
@@ -92,23 +83,19 @@ header {
     width: 200%;
     height: 200%;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .avatar:hover::before {
-    opacity: 1; /* Show shine effect on hover */
+    opacity: 1;
 }
-
 
 header h1 {
     margin-left: -10px;
     font-size: var(--font-size-base);
     font-weight: bold;
 }
-
-/* mobile **************************/
-/*Hamburger menu*/
 
 #menu {
     display: block;
@@ -161,7 +148,7 @@ nav a:hover:not(.active) {
     background-color: #303a44;
     color: white;
     font-weight: bold;
-     text-decoration: underline;
+    text-decoration: underline;
     text-underline-offset: 5px;
     text-decoration-thickness: 2px; 
 }
@@ -173,7 +160,6 @@ nav a.active {
     font-weight: bold;
     color: white;
     background-color: #303a44;
-
 }
 
 .open li {
@@ -183,7 +169,7 @@ nav a.active {
 #menu.open::before {
     content: "X";
 }
-/*Content*******************/
+
 main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
@@ -328,12 +314,11 @@ section p {
 }
 
 .courseNoComplete {
-    background-color: var(--alice-blue);
-    color: var(--oxford-blue-3);
+    background-color: rgb(255, 0, 0);
 }
 
 .courseComplete {
-    background-color: var(--yale-blue);
+    background-color: green;
     color: white;
 }
 .course h3 {
@@ -373,7 +358,7 @@ section p {
     height: 100%;
     z-index: 1;
     transition: all 0.5s;
-    background-color: rgba(8, 118, 227, 0.1);
+    background-color: rgba(254, 254, 254, 0.403);
 }
 .course:hover::after {
     opacity: 0;
@@ -401,8 +386,6 @@ dialog button {
     padding: 0.5rem 1rem;
     border: 1px solid var(--oxford-blue-3);
 }
-
-/*Footer */
 
 footer {
     margin-top: auto;
