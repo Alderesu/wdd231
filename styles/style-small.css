@@ -66,7 +66,6 @@ header {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-    transform: translatey(0px);
     overflow: hidden;
 }
 
@@ -104,9 +103,6 @@ header h1 {
     padding: 8px 12px;
     background-color: var(--oxford-blue);
     color: var(--alice-blue);
-}
-
-#menu {
     font-family: Roboto, sans-serif;
     position: absolute;
     top: 1.6rem;
@@ -216,9 +212,6 @@ section img {
     height: auto;
     width: 80%;
     display: block;
-}
-
-section img {
     border-radius: 10px;
     margin: 0 auto;
 }
@@ -244,9 +237,6 @@ section p {
 .courseButton {
     flex: 1 1 100%;
     margin: 5px;
-}
-
-.courseButton {
     display: inline-block;
     padding: 0.25rem 1rem;
     border-radius: 5rem;
@@ -259,6 +249,7 @@ section p {
     overflow: hidden;
     z-index: 1;
 }
+
 .courseButton:after {
     content: "";
     position: absolute;
@@ -270,6 +261,7 @@ section p {
     border-radius: 5rem;
     z-index: -2;
 }
+
 .courseButton:before {
     content: "";
     position: absolute;
@@ -282,9 +274,11 @@ section p {
     border-radius: 5rem;
     z-index: -1;
 }
+
 .courseButton:hover {
     color: var(--headline-color-on-color);
 }
+
 .courseButton:hover:before {
     width: 100%;
 }
@@ -293,16 +287,10 @@ section p {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.course {
     border: wheat solid 2px;
     width: 80%;
     padding: 10px;
     border-radius: 5px;
-}
-
-.course {
     transition: all 0.3s;
     position: relative;
 }
@@ -311,6 +299,7 @@ section p {
     font-size: var(--font-size-large);
     margin: 0;
     padding: 0;
+    transition: all 0.3s;
 }
 
 .courseNoComplete {
@@ -321,9 +310,7 @@ section p {
     background-color: green;
     color: white;
 }
-.course h3 {
-    transition: all 0.3s;
-}
+
 .course::before {
     content: "";
     position: absolute;
@@ -342,13 +329,16 @@ section p {
     border-bottom-color: rgba(0, 18, 51, 0.468);
     transform: scale(0.1, 1);
 }
+
 .course:hover h3 {
     letter-spacing: 2px;
 }
+
 .course:hover::before {
     opacity: 1;
     transform: scale(1, 1);
 }
+
 .course::after {
     content: "";
     position: absolute;
@@ -360,6 +350,7 @@ section p {
     transition: all 0.5s;
     background-color: rgba(254, 254, 254, 0.403);
 }
+
 .course:hover::after {
     opacity: 0;
     transform: scale(0.1, 1);
@@ -393,8 +384,6 @@ footer {
 
 footer p {
     margin: 0;
-}
-footer p {
     text-align: center;
     padding: 10px;
 }
@@ -424,7 +413,7 @@ footer p {
     }
 
     main p {
-        font-size:var(--font-size-small);
+        font-size: var(--font-size-small);
     }
 
     section {
