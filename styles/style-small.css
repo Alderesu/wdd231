@@ -57,6 +57,8 @@ header {
     justify-content: center;
 }
 
+
+
 .avatar {
     width: auto;
     height: 141px;
@@ -90,7 +92,7 @@ header {
     opacity: 1;
 }
 
-header h1 {
+header h2 {
     margin-left: -10px;
     font-size: var(--font-size-base);
     font-weight: bold;
@@ -183,7 +185,7 @@ main section {
     text-align: center;
 }
 
-section h2 {
+section h2, h1 {
     background-color:  rgba(0, 18, 51, 0.468);
     color: var(--headline-color-on-color);
     margin: 0;
@@ -433,3 +435,4 @@ footer p {
         padding: 10px;
     }
 }
+
