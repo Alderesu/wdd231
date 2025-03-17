@@ -105,7 +105,7 @@ header {
     padding: 10px 5px;
 }
 
-header h1 {
+header h2 {
     display: inline-block;
     text-align: left;
     padding: 5px;
@@ -145,7 +145,7 @@ nav ul {
     padding: 0;
 }
 
-nav li {
+nav a {
     display: none;
     font-family: var(--poppins-heading-font);
     font-weight: var(--poppins-bold-font-weight);
@@ -368,7 +368,7 @@ footer p:first-child {
         width: 80px;
     }
 
-    header h1 {
+    header h2 {
         padding: 10px 0;
         font-size: var(--font-size-large);
     }
@@ -378,7 +378,7 @@ footer p:first-child {
         justify-content: center;
     }
 
-    nav ul li {
+    nav ul a {
         display: block;
         flex: 1 1 auto;
     }
