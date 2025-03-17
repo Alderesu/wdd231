@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Directory | Chamber Philippines">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://alderesu.github.io/wdd231/chamber/images/logo-chamber-modified-small.webp">
+    <meta property="og:url" content="https://alderesu.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Chamber of Philippines, Join us to get more information">
+    <meta property="fb:app_id" content="your-app-id-here">
+
+
+    <title>Directory | Philippines Chamber of Commerce</title>
+    <meta name="description" content="Chamber directory, Philippines" />
+    <meta name="author" content="Kyle Aldrich Moran" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    </noscript>
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/directory.css" />
+
+    <script type="module" src="./scripts/app.js"></script>
+    <script src="./scripts/modules/directory.js" defer></script>
+
+
+    <link rel="icon" href="images/favicon-main-modified.ico" sizes="48x48" type="image/ico">
+    <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="directory-page">
+    <header>
+        <nav>
+            <div class="box-logo-header">
+                <img class="logo-chamber" src="../chamber/images/logo-chamber-modified-small.webp"
+                    alt="Logo Chamber Philippines" />
+                <h1 class="nameHeader">Caloocan City<br>Chamber of Ecommerce</h1>
+                <button name="navigation button" id="menu" aria-label="Toggle menu"></button>
+            </div>
+            <ul>
+                <li><a class="nav-a " href="./index.html">Home</a></li>
+                <li><a class="nav-a " href="./discover.html">Discover</a></li>
+                <li><a class="nav-a " href="./directory.html">Directory</a></li>
+                <li><a class="nav-a " href="./join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="Main-title">Directory</h2>
+        <div class="button-box">
+            <button title="List view" class='mybtn activebtn' id="list-view-btn"><i class='fas fa-list'></i></button>
+            <button title="Grid view" class='mybtn' id="grid-view-btn"><i class='fas fa-border-all'></i></button>
+        </div>
+
+        <div id="directory-box"></div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear">Lorem</span> Kyle Aldrich Moran |
+            Philippines</p>
+        <p id="lastModified">Lorem ipsum</p>
+    </footer>
+</body>
+
+</html>
