@@ -114,6 +114,7 @@ td a:active,
 
 #directory-box.list-view {
     display: block;
+    font-family: var( --open-sans-paragraph-font);
 }
 
 #directory-box.list-view .card-box {
