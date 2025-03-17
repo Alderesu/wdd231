@@ -66,7 +66,7 @@ button:hover {
     border-radius: 10px;
     margin: 10px;
     background-color: var(--white);
-    overflow: hidden;
+    overflow: auto;
 }
 
 .logo {
@@ -86,6 +86,8 @@ button:hover {
 
 .card-box ul {
     padding: 10px;
+    font-family: var(--open-sans-paragraph-font);
+    font-size: 12px;
 }
 
 td a:link, td a,
