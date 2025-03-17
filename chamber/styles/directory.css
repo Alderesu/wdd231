@@ -129,6 +129,7 @@ td a:active,
         margin: 0 auto;
         border-collapse: separate;
         border-spacing: 0 15px;
+        font-family: var(--open-sans-paragraph-font);
     }
 
     #directory-box.list-view .card-box {

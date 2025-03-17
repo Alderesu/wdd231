@@ -96,7 +96,7 @@ header {
     justify-content: left;
 }
 
-.box-logo-header h1 {
+.box-logo-header h2 {
     display: inline-block;
 }
 
@@ -145,7 +145,7 @@ nav ul {
     padding: 0;
 }
 
-nav a {
+nav li {
     display: none;
     font-family: var(--poppins-heading-font);
     font-weight: var(--poppins-bold-font-weight);
@@ -378,7 +378,7 @@ footer p:first-child {
         justify-content: center;
     }
 
-    nav ul a {
+    nav ul li {
         display: block;
         flex: 1 1 auto;
     }
