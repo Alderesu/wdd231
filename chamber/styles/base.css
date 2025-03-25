@@ -2,7 +2,7 @@
 :root {
   /* Project colors */
   --primary-color: #1a1a1b;
-  --secondary-color: #ffbe37;
+  --secondary-color:#c0902c;
   --tertiary-color: #edeefd;
   --default-color: #eef0f4;
   --optional-color:  #1b2232;
@@ -159,7 +159,7 @@ svg {
 
 
 .logo-box img {
-  width: 100%;
+  width: 250%;
   height: auto;
 }
 
@@ -598,7 +598,7 @@ footer {
 
 .footer-captions {
   font-family: var(--heading-font);
-  color: #444;
+  color:var(--secondary-color);
   font-weight: 600;
 }
 
@@ -682,7 +682,7 @@ address a:hover,
 
 .views-button-section #grid-view {
   background-color: var(--optional-color);
-  color: var(--default-color);
+  color: var(--secondary-color);
 }
 
 .views-button-section #grid-view:hover, .views-button-section #list-view:hover {
@@ -692,7 +692,7 @@ address a:hover,
 
 .views-button-section #list-view {
   background-color: var(--optional-color);
-  color: var(--default-color);
+  color: var(--secondary-color);
 }
 
 .member-card-section {
