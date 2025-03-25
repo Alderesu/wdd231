@@ -1,74 +1,77 @@
-[
+{
+"data": [
     {
         "Name": "Lexan Industrial Corporation",
         "Industry": "Manufacturing",
-        "Physical Address": "131 7th Avenue Bet. 9th & 10th Streets, Grace Park 1400, Caloocan City, Metro Manila, Philippines",
+        "Address": "131 7th Avenue Bet. 9th & 10th Streets, Grace Park 1400, Caloocan City, Metro Manila, Philippines",
         "Website": "https://www.lexanindustrial.com/",
         "Phone": "09663308234 / 09663308235",
-        "Membership": "Gold",
+        "Membership": "images/gold.png",
         "logo": "https://www.philbizs.com/upload/owner/1569654853_14.jpg"
     },
     {
         "Name": "Highchem Trading",
         "Industry": "Chemical",
-        "Physical Address": "105 Mt. Natib St. Brgy. San Jose, Caloocan City, Metro Manila, Philippines",  
+        "Address": "105 Mt. Natib St. Brgy. San Jose, Caloocan City, Metro Manila, Philippines",  
         "Website": "https://www.philbizs.com/directory/highchem-trading",
         "Phone": "09663308234",
-        "Membership": "Gold",
+        "Membership": "images/gold.png",
         "logo": "https://www.philbizs.com/upload/owner/1569481251_3.JPG"
     },
     {
         "Name": "Barica Parts Center",
         "Industry": "Car Parts and Accessories",
-        "Physical Address": "221 Rizal Ave. Ext., 1400, Caloocan City, Philippines, Metro Manila, Caloocan City, Barangay 1, Philippines",
+        "Address": "221 Rizal Ave. Ext., 1400, Caloocan City, Philippines, Metro Manila, Caloocan City, Barangay 1, Philippines",
         "Website": "https://www.philbizs.com/directory/barica-parts-center",
         "Phone": "+63 2 366 1027 / +63 2 365 8658",
-        "Membership": "Gold",
+        "Membership": "images/gold.png",
         "logo": "https://www.philbizs.com/upload/owner/1569315822_barica.PNG"
     },
     {
         "Name": "RT Belarmino & Co., CPAs",
         "Industry": "Audit and Accounting",
-        "Physical Address": "691 Area A, Brixton Road, Caloocan City, Metro Manila, Philippines",
+        "Address": "691 Area A, Brixton Road, Caloocan City, Metro Manila, Philippines",
         "Website": "https://rtbelarmino.com/",
         "Phone": "+63 2 404-5965",
-        "Membership": "Silver",
+        "Membership": "images/silver.png",
         "logo": "https://www.philbizs.com/upload/owner/1569307036_p1.png"
     },
     {
         "Name": "Equipoise Accounting & Consultancy Services",
         "Industry": "Audit and Accounting",
-        "Physical Address": "T12 Santol Rd. Potrero Malabon City, Caloocan City, Metro Manila, Philippines",
+        "Address": "T12 Santol Rd. Potrero Malabon City, Caloocan City, Metro Manila, Philippines",
         "Website": "https://www.philbizs.com/directory/equipoise-accounting-and-consultancy-services",
         "Phone": "447-2489 / 0917-5179686",
-        "Membership": "Silver",
+        "Membership": "images/silver.png",
         "logo": "https://www.philbizs.com/upload/owner/1569292116_p1.png"
     },
     {
         "Name": "Hydraulic Hose Philippines - Rallyson Enterprises",
         "Industry": "Automotive Parts and Services",
-        "Physical Address": "100 C-3 Road Corner B. Serrano, Caloocan City, Manila, Philippines, Caloocan City, Metro Manila, Barangay 115, Philippines",
+        "Address": "100 C-3 Road Corner B. Serrano, Caloocan City, Manila, Philippines, Caloocan City, Metro Manila, Barangay 115, Philippines",
         "Website": "https://www.philbizs.com/directory/hydraulic-hose-philippines-rallyson-enterprises",
         "Phone": "(+632) 364-2267",
-        "Membership": "Gold",
+        "Membership": "images/gold.png",
         "logo": "https://www.philbizs.com/upload/owner/1569291364_rallyL.png"
     },
     {
         "Name": "Edisy Trading Corporation",
         "Industry": "Market and Supplies",
-        "Physical Address": "154 Rizal Ave. Ext., Grace Park, 1403, Caloocan City, Philippines, Metro Manila, Caloocan City, Barangay 154, Philippines",
+        "Address": "154 Rizal Ave. Ext., Grace Park, 1403, Caloocan City, Philippines, Metro Manila, Caloocan City, Barangay 154, Philippines",
         "Website": "https://www.philbizs.com/directory/edisy-trading-corporation",
         "Phone": "+63 2 361 1893",
-        "Membership": "Bronze",
+        "Membership": "images/bronze.png",
         "logo": "https://www.philbizs.com/upload/owner/1569220901_edisy.jpg"
     },
     {
         "Name": "Hivelabs Training Center",
         "Industry": "Manpower Staffing and Cleaning/Building Maintenance",
-        "Physical Address": "2nd F Unit B, Correal Bldg., No. 14 Lotus St., T.S. Cruz Subd., Almanza Dos, Las Pinas City, Metro Manila, Philippines",
+        "Address": "2nd F Unit B, Correal Bldg., No. 14 Lotus St., T.S. Cruz Subd., Almanza Dos, Las Pinas City, Metro Manila, Philippines",
         "Website": "https://www.philbizs.com/directory/hivelabs-training-center",
         "Phone": "(632) 441-2487",
-        "Membership": "Gold",
+        "Membership": "images/gold.png",
         "logo": "https://www.philbizs.com/upload/owner/1569215906_1523339536-60-hivelabs-training-center.jpg"
     }
 ]
+
+}

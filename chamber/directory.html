@@ -1,77 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta property="og:title" content="Directory | Chamber Philippines">
-    <meta property="og:type" content="website">
-    <meta property="og:image"
-        content="https://alderesu.github.io/wdd231/chamber/images/logo-chamber-modified-small.webp">
-    <meta property="og:url" content="https://alderesu.github.io/wdd231/chamber/directory.html">
-    <meta property="og:description" content="Chamber of Philippines, Join us to get more information">
-    <meta property="fb:app_id" content="your-app-id-here">
-
-
-    <title>Directory | Philippines Chamber of Commerce</title>
-    <meta name="description" content="Chamber directory, Philippines" />
-    <meta name="author" content="Kyle Aldrich Moran" />
-
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap">
-    </noscript>
-
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/directory.css" />
-
-    <script type="module" src="scripts/app.js"></script>
-    <script src="scripts/modules/directory.js" defer></script>
-
-
-    <link rel="icon" href="images/favicon-main-modified.ico" sizes="48x48" type="image/ico">
-    <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
-</head>
-
-<body id="directory-page">
-    <header>
-        <nav>
-            <div class="box-logo-header">
-                <img class="logo-chamber" src="../chamber/images/logo-chamber-modified-small.webp"
-                    alt="Logo Chamber Philippines" />
-                <h2 class="nameHeader">Caloocan City<br>Chamber of Ecommerce</h2>
-                <button name="navigation button" id="menu" aria-label="Toggle menu"></button>
-            </div>
-            <ul>
-                <li><a class="nav-a " href="./index.html">Home</a></li>
-                <li><a class="nav-a " href="./discover.html">Discover</a></li>
-                <li><a class="nav-a " href="./directory.html">Directory</a></li>
-                <li><a class="nav-a " href="./join.html">Join</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1 class="Main-title">Directory</h1>
-        <div class="button-box">
-            <button title="List view" class='mybtn activebtn' id="list-view-btn"><i class='fas fa-list'></i></button>
-            <button title="Grid view" class='mybtn' id="grid-view-btn"><i class='fas fa-border-all'></i></button>
-        </div>
-
-        <div id="directory-box"></div>
-    </main>
-    <footer>
-        <p>&copy;<span id="currentyear">Lorem</span> Kyle Aldrich Moran |
-            Philippines</p>
-        <p id="lastModified">Lorem ipsum</p>
-    </footer>
-</body>
-
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Caloocan Chamber of Commerce Directory</title>
+		<meta name="author" content="Kyle Aldrich Moran">
+		<meta name="description" content="Discover the Caloocan Chamber of Commerce Member Directory: connect with local businesses, trusted services, and industry leaders."/>
+		<meta property="og:title" content="Caloocan Business Chamber ">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://alderesu.github.io/wdd231/chamber/directory.html">
+		<meta property="og:image" content="https://alderesu.github.io/wdd231/chamber/images/logo-chamber-modified-small.webp">
+		<meta property="og:site_name" content="Caloocan Business Chamber">
+		<meta property="og:description" content="Discover the Caloocan Chamber of Commerce Member Directory: connect with local businesses, trusted services, and industry leaders.">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/logo-chamber-modified-small.png">
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+		<script src="scripts/index.js" defer></script>
+		<link rel="stylesheet" href="styles/normalize.css">
+		<link rel="stylesheet" href="styles/base.css">
+		<link rel="stylesheet" href="styles/larger.css">
+        <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
+	</head>
+	<body class="directory-page-body">
+		<header>
+			<button class="menu-btn" aria-label="Toggle menu button">
+				<svg>
+					<use xlink:href="images/sprite.svg#icon-icon-menu"></use>
+				</svg>
+			</button>
+			<div class="logo-box">
+				<a href="index.html">
+					<img src="images/logo-chamber-modified-small.webp" alt="Caloocan Business Chamber logo" class="logo" width="323" height="130" />
+				</a>
+			</div>
+            
+			<nav class="header-nav">
+				<ul class="nav-list">
+					<li>
+						<a href="index.html" class="nav-links">
+							<svg>
+								<use xlink:href="images/sprite.svg#icon-home"></use>
+							</svg> HOME </a>
+					</li>
+					<li>
+						<a href="discover.html" class="nav-links">
+							<svg>
+								<use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+							</svg> DISCOVER </a>
+					</li>
+					<li>
+						<a href="directory.html" class="nav-links">
+							<svg>
+								<use xlink:href="images/sprite.svg#icon-folder"></use>
+							</svg> DIRECTORY </a>
+					</li>
+					<li>
+						<a href="join.html" class="nav-links">
+							<svg>
+								<use xlink:href="images/sprite.svg#icon-add-user"></use>
+							</svg> JOIN </a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="intro-section">
+				<h1>Discover Our Diverse Member Directory</h1>
+                <p>Welcome to our Member Directory, showcasing the businesses that power our community. Explore a diverse array of companies contributing to the local economy, whether you're looking for trusted services, networking opportunities, or simply want to discover local businesses.</p>			</section>
+			<section class="views-button-section">
+				<button role="button" id="grid-view"><i class='fas fa-border-all'></i> Grid view</button>
+				<button role="button" id="list-view"><i class='fas fa-list'></i> List view</button>
+			</section>
+			<section class="member-card-section"></section>
+		</main>
+		<footer>
+			<div class="contact-box">
+				<p class="footer-captions">Contact Us</p>
+				<address>
+					<a href="mailto:kmoran@byupathway.edu">📧 kmoran@byupathway.edu</a>
+					<!-- <br> -->
+					<a href="tel:+639154126282">📞 +(63) 915 142 6282</a>
+					<p>Caloocan City, Philippines</p>
+				</address>
+			</div>
+			<div class="quick-link-box">
+				<p class="footer-captions">Quick Links</p>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="discover.html">Discover</a>
+					</li>
+					<li>
+						<a href="directory.html">Directory</a>
+					</li>
+					<li>
+						<a href="join.html">Join Us</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-socials">
+				<p class="footer-captions">Stay Connected</p>
+				<ul>
+					<li>
+						<a href="https://www.instagram.com/k.ichoo/" target="_blank" class="footer-social-links" aria-label="Go to Kyle's Instagram page">
+							<svg>
+								<use xlink:href="images/sprite.svg#icon-instagram-with-circle"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/kyle-aldrich-moran/" target="_blank" class="footer-social-links" aria-label="Go to Kyle's LinkedIn account">
+							<svg>
+								<use xlink:href="images/sprite.svg#icon-linkedin-with-circle"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/alderesuu" target="_blank" class="footer-social-links" aria-label="Go to Kyle's Facebook page">
+							<svg>
+								<use xlink:href="images/sprite.svg#icon-facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/" target="_blank" class="footer-social-links" aria-label="Go to Youtube.com homepage">
+							<svg>
+								<use xlink:href="images/sprite.svg#icon-youtube-with-circle"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="copyright-box">
+				<p> &copy; <span id="year"></span> Kyle Aldrich Moran | Philippines </p>
+				<p> Last modified: <span class="last-modify"></span>
+				</p>
+				<p id="analytics"></p>
+			</div>
+		</footer>
+	</body>
 </html>
