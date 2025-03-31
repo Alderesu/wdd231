@@ -93,6 +93,10 @@ body {
   position: relative;
 }
 
+.header-intro h2 {
+  color: var(--calnder-text-color);
+}
+
 
 h1 {
   font-family: var(--heading-font);
@@ -153,7 +157,7 @@ svg {
   line-height: normal;
 }
 
-.homepage-body h2 {
+.homepage-body h1 {
   font-family: var(--heading-font);
   text-transform: uppercase;
 }
@@ -238,25 +242,6 @@ svg {
   color: #0e0d0d;
   text-transform: uppercase;
   font-weight: 900;
-}
-
-.motto-text::before,
-.motto-text::after {
-  content: "\201C";
-  color: #9c9c9cb0;
-  position: absolute;
-  font-size: 12rem;
-  z-index: -1;
-}
-
-.motto-text::before {
-  top: -3rem;
-  left: -2rem;
-}
-
-.motto-text::after {
-  top: -3rem;
-  right: -2rem;
 }
 
 .socials-box {
@@ -352,7 +337,7 @@ svg {
   font-family: var(--heading-font);
   letter-spacing: 2px;
   text-align: center;
-}
+} 
 
 .news-event-section-box {
   display: grid;
@@ -393,7 +378,7 @@ svg {
   border: 2rem dashed #1b2232;
 }
 
-.news-box h2 {
+.news-box h1 {
   color: var(--primary-color);
   grid-row: 1 / 2;
   grid-column: 1 / 3;
