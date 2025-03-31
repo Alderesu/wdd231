@@ -157,7 +157,7 @@ svg {
   line-height: normal;
 }
 
-.homepage-body h1 {
+.homepage-body h2 {
   font-family: var(--heading-font);
   text-transform: uppercase;
 }
