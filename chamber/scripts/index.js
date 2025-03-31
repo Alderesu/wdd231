@@ -233,9 +233,7 @@ function weatherForecast() {
   const windSpeed = document.querySelector("#windspeed");
   const windDirection = document.querySelector("#wind-direction");
 
-  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`; // Changed to metric for Celsius
-
-  const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${apiKey}`;
+  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
 
   const apiFetch = async function () {
     try {
@@ -247,21 +245,30 @@ function weatherForecast() {
         throw Error(await response1.text());
       }
     } catch (error) {
-      console.log(error);
+      console.log("Error fetching weather data:", error);
     }
   };
 
   function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;C`; // Display temperature in Celsius
+    currentTemp.innerHTML = `${data.main.temp}&deg;C`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
-    weatherIcon.setAttribute("src", iconsrc);
-    weatherIcon.setAttribute("alt", "weather-icon");
+
+    // Check if the icon source is valid
+    if (iconsrc) {
+      weatherIcon.setAttribute("src", iconsrc);
+      weatherIcon.setAttribute("alt", desc);
+    } else {
+      // Set a default image if the icon source is not valid
+      weatherIcon.setAttribute("src", "path/to/default/icon.png"); // Replace with a valid default icon path
+      weatherIcon.setAttribute("alt", "Weather icon not available");
+    }
+
     captionDesc.textContent = `${desc}`;
-    windSpeed.textContent = `${data.wind.speed} m/s`; // Wind speed in meters per second
-    windDirection.innerHTML = `${data.wind.deg}&deg;`; // Wind direction in degrees
+    windSpeed.textContent = `${data.wind.speed} m/s`;
+    windDirection.innerHTML = `${data.wind.deg}&deg;`;
   }
-  
+
   apiFetch();
 }
 
