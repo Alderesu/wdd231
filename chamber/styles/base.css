@@ -348,7 +348,7 @@ svg {
   justify-content: center;
 }
 
-.news-event-section h2 {
+.news-event-section h1 {
   font-family: var(--heading-font);
   letter-spacing: 2px;
   text-align: center;
