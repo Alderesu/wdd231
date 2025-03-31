@@ -77,12 +77,22 @@ body {
 .homepage-body header {
   /* padding-inline: 2rem; */
   padding-block-end: 2rem;
-  background: url(../images/hero.WEBP);
+  background: url(../images/Manila.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
+
+.homepage-body header {
+  padding-block-end: 2rem;
+  background: url(../images/Manila.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 
 h1 {
   font-family: var(--heading-font);
@@ -146,7 +156,6 @@ svg {
 .homepage-body h2 {
   font-family: var(--heading-font);
   text-transform: uppercase;
-  text-decoration: underline double;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -155,11 +164,8 @@ svg {
   padding: 1rem;
 }
 
-
-
-
 .logo-box img {
-  width: 250%;
+  width: 100%;
   height: auto;
 }
 
@@ -209,9 +215,8 @@ svg {
   width: 70%;
   margin: 4em auto;
   grid-row: 2 / 3;
-  grid-column: 1 / span 3;
+  grid-column: 2 / span 3;
   justify-self: center;
-
   gap: var(--default-gap);
 }
 
@@ -219,7 +224,6 @@ svg {
   padding-inline: 2em;
   padding-block: 1em;
   box-shadow: var(--box-shadow-all-4sides);
-
   justify-content: center;
   gap: var(--default-gap);
   text-align: center;
@@ -292,7 +296,7 @@ svg {
 }
 
 .btn-join {
-  color: #444;
+  color: #000000;
   background-color: var(--secondary-color);
 }
 
@@ -338,7 +342,8 @@ svg {
 
 .news-event-section {
   display: grid;
-  padding-block: 5em;
+  padding-top: 3em;
+  padding-bottom: 2em;
   overflow: hidden;
   justify-content: center;
 }
@@ -360,7 +365,7 @@ svg {
   grid-row: 1 / 5;
   padding-block-end: 3em;
   padding-inline: 1.5em;
-  background-color: rgba(214, 139, 69, 0.67);
+  background-color: rgba(192, 144, 44);
   position: relative;
   gap: var(--default-gap);
 }
@@ -378,14 +383,14 @@ svg {
   transform: skewX(20deg);
   top: 5rem;
   left: 10rem;
-  border: 2rem double #d68b453c;
+  border: 2rem double #1b2232;
 }
 
 .news-box::after {
   transform: skewX(-20deg);
   top: -5rem;
   right: -10rem;
-  border: 2rem dashed #d68b453c;
+  border: 2rem dashed #1b2232;
 }
 
 .news-box h2 {
@@ -437,12 +442,13 @@ svg {
 }
 
 .event-time {
-  background-color: #d68c45;
+  background-color: #1b2232;
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.2s;
   text-align: center;
+  color: var(--default-color);
 }
 
 .event-time:hover {
@@ -554,9 +560,9 @@ svg {
   gap: 3.5em;
   align-items: center;
   justify-content: space-evenly;
-
   padding: 6em 4em;
-  background-color: #d68c45;
+  background-color: #1b2232;
+  color: var(--default-color);
 }
 
 .mini-gallery-box {
@@ -573,7 +579,7 @@ svg {
 }
 
 .explore-text-box {
-  color: #000;
+  color: var(--default-color);
   /* width: 35%; */
   display: grid;
   gap: var(--default-gap);

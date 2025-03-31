@@ -78,6 +78,7 @@
   
     .header-intro {
       text-align: left;
+      padding-bottom: 3em;
     }
   
     .logo-box {
@@ -122,7 +123,8 @@
     }
   
     .news-event-section {
-      padding-block: 10em;
+      padding-top: 10em;
+      padding-bottom: 3em;
     }
   
     .news-event-section-box {
@@ -167,7 +169,6 @@
   
     .service-card-box {
       width: 60%;
-  
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: var(--default-gap);

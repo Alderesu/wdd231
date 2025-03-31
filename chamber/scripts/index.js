@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
           memberDiv.classList.add("member-card");
           memberDiv.innerHTML = `
               <img src="${member.logo}" alt="${member.Name} logo" width="100px" height="100px">
-              <p>${member.name}</p>
+              <p>${member.Name}</p>
           `;
           spotlightContainer.appendChild(memberDiv);
         });
@@ -223,8 +223,8 @@ activePage();
 // The weather forecast functionality. Displaying the weather
 // forecast to the user
 function weatherForecast() {
-  const lat = -25.74433236181061;
-  const long = 28.234333823643258;
+  const lat = 14.5995; // Latitude for Caloocan City
+  const long = 120.9772; // Longitude for Caloocan City
   const apiKey = "f4619f75c2d45cc1bfe1a55992e82aaa";
 
   const currentTemp = document.querySelector("#current-temp");
@@ -233,7 +233,7 @@ function weatherForecast() {
   const windSpeed = document.querySelector("#windspeed");
   const windDirection = document.querySelector("#wind-direction");
 
-  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=imperial`;
+  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`; // Changed to metric for Celsius
 
   const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${apiKey}`;
 
@@ -252,17 +252,19 @@ function weatherForecast() {
   };
 
   function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;C`;
+    currentTemp.innerHTML = `${data.main.temp}&deg;C`; // Display temperature in Celsius
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute("src", iconsrc);
     weatherIcon.setAttribute("alt", "weather-icon");
     captionDesc.textContent = `${desc}`;
-    windSpeed.textContent = data.wind.speed;
-    windDirection.innerHTML = `${data.wind.deg}&deg;`;
+    windSpeed.textContent = `${data.wind.speed} m/s`; // Wind speed in meters per second
+    windDirection.innerHTML = `${data.wind.deg}&deg;`; // Wind direction in degrees
   }
+  
   apiFetch();
 }
+
 weatherForecast();
 
 // ////////////////////////////////////////////////////////////
