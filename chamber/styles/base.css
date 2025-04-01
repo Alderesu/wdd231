@@ -303,30 +303,7 @@ svg {
   position: relative;
   gap: var(--default-gap);
 }
-
-.news-box::before,
-.news-box::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.news-box::before {
-  transform: skewX(20deg);
-  top: 5rem;
-  left: 10rem;
-  border: 2rem double #1b2232;
-}
-
-.news-box::after {
-  transform: skewX(-20deg);
-  top: -5rem;
-  right: -10rem;
-  border: 2rem dashed #1b2232;
-}
-
+  
 .news-box h1 {
   color: var(--primary-color);
   grid-row: 1 / 2;
