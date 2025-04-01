@@ -184,11 +184,12 @@
     }
   
     .card:hover {
-      background-color: var(--secondary-color);
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
     }
   
     .card:hover svg {
-      fill: var(--primary-color);
+      fill: var(--secondary-color);
     }
   
     .explore {
