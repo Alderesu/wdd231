@@ -212,7 +212,7 @@
     }
   
     .footer-social-links:hover svg {
-      fill: var(--secondary-color);
+      fill: var(--primary-color);
     }
   
               /* ----------------------------------------------------- */
