@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "Spaghetti Carbonara",
+        "ingredients": ["Spaghetti", "Eggs", "Parmesan cheese", "Pancetta", "Black pepper"],
+        "instructions": "Cook spaghetti. In a separate bowl, mix eggs and cheese. Combine with spaghetti and pancetta.",
+        "image": "images/spaghetti-carbonara.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Chocolate Chip Cookies",
+        "ingredients": ["Flour", "Sugar", "Butter", "Chocolate chips", "Eggs"],
+        "instructions": "Mix ingredients, scoop onto a baking sheet, and bake.",
+        "image": "images/chocolate-chip-cookies.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Tacos",
+        "ingredients": ["Tortillas", "Ground beef", "Lettuce", "Tomato", "Cheese"],
+        "instructions": "Cook beef, assemble tacos with toppings.",
+        "image": "images/tacos.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Caesar Salad",
+        "ingredients": ["Romaine lettuce", "Caesar dressing", "Croutons", "Parmesan cheese"],
+        "instructions": "Toss ingredients together and serve.",
+        "image": "images/caesar-salad.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Pancakes",
+        "ingredients": ["Flour", "Milk", "Eggs", "Sugar", "Baking powder"],
+        "instructions": "Mix ingredients and cook on a skillet.",
+        "image": "images/pancakes.jpg"
+    }
+]

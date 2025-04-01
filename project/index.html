@@ -1,0 +1,51 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Recipe Organizer - Your Favorite Recipes</title>  
+    <link rel="stylesheet" href="styles/styles.css">  
+</head>  
+<body>  
+
+    <header>  
+        <h1 style="font-family: 'Arial', sans-serif;">Recipe Organizer</h1>  
+        <input type="text" id="search" placeholder="Search recipes by name">  
+        <button id="add-recipe-btn">Add Your Recipe</button>  
+    </header>  
+
+    <main id="recipe-gallery" aria-live="polite">  
+        <!-- Recipe cards will be dynamically inserted here -->  
+    </main>  
+
+    <!-- Add Recipe Modal -->  
+    <div id="add-recipe-modal" class="modal" aria-hidden="true">  
+        <div class="modal-content">  
+            <span class="close" id="close-add-recipe">&times;</span>  
+            <h2 style="color: #4CAF50;">Add Your Recipe</h2>  
+            <form id="add-recipe-form">  
+                <label for="recipe-title">Title:</label>  
+                <input type="text" id="recipe-title" required aria-required="true">  
+                
+                <label for="recipe-ingredients">Ingredients (comma-separated):</label>  
+                <input type="text" id="recipe-ingredients" required aria-required="true">  
+                
+                <label for="recipe-instructions">Instructions:</label>  
+                <textarea id="recipe-instructions" required aria-required="true"></textarea>  
+                
+                <label for="recipe-image">Image URL:</label>  
+                <input type="text" id="recipe-image" required aria-required="true">  
+                
+                <button type="submit">Add Recipe</button>  
+            </form>  
+        </div>  
+    </div>  
+
+    <div id="modal-title" style="font-weight: bold;"></div>
+    <img id="modal-image" src="" alt="" style="max-width: 100%; height: auto;">
+    <div id="modal-instructions" style="margin-top: 10px;"></div>
+    <ul id="modal-ingredients" style="list-style-type: none; padding: 0;"></ul>
+
+    <script src="scripts/script.js"></script>  
+</body>  
+</html>
