@@ -27,7 +27,6 @@
   --box-shadow-all-4sides-cleaner: 0 0 2rem -5px rgba(0, 0, 0, 0.18);
 
   --default-gap: 2em;
-  --default-gap: 1em;
 
   --input-border: #8b8a8b;
   /* change the values below to your chosen font(s) */
@@ -76,15 +75,6 @@ body {
 
 .homepage-body header {
   /* padding-inline: 2rem; */
-  padding-block-end: 2rem;
-  background: url(../images/Manila.webp);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.homepage-body header {
   padding-block-end: 2rem;
   background: url(../images/Manila.webp);
   background-position: center;
