@@ -243,7 +243,7 @@ svg {
 .socials-box,
 .weather-box,
 .events-box,
-.spotlight {
+.spotlight, .weather-forecast {
   border-radius: 0.5rem;
 }
 
@@ -282,7 +282,7 @@ svg {
   justify-content: center;
 }
 
-.news-event-section h1 {
+.news-event-section h2 {
   font-family: var(--heading-font);
   letter-spacing: 2px;
   text-align: center;
@@ -304,7 +304,7 @@ svg {
   gap: var(--default-gap);
 }
   
-.news-box h1 {
+.news-box h2 {
   color: var(--primary-color);
   grid-row: 1 / 2;
   grid-column: 1 / 3;
@@ -312,7 +312,7 @@ svg {
   padding-block: 2rem;
 }
 
-.weather-box {
+.weather-box, .weather-forecast {
   color: var(--default-color);
   padding: 1em 2em;
   text-align: center;
@@ -325,7 +325,7 @@ svg {
 
 .events-box,
 .weather-box,
-.spotlight {
+.spotlight, .weather-forecast {
   background-color: var(--primary-color);
   padding-inline: 1em;
   display: grid;
@@ -340,7 +340,7 @@ svg {
 
 .events-box h2,
 .weather-box h2,
-.spotlight h2 {
+.spotlight h2, .weather-forecast {
   color: var(--default-color);
   text-decoration-color: var(--default-color);
   align-self: center;
@@ -394,112 +394,10 @@ svg {
   flex-grow: 1;
 }
 
-/* ---------------------PARTNERS SECTION ------------------- */
-.partners {
-  /* overflow: hidden; */
-  padding-block: 2em;
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23eef0f4' fill-opacity='1'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
-}
 
-.partner-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
+/* Weather forecast */
 
-.partner-slide:last-of-type {
-  display: none;
-}
 
-.partners h2 {
-  color: #444;
-  font-family: var(--heading-font);
-  text-align: center;
-  margin-block-end: 2em;
-}
-
-.partner-slide img {
-  width: 20%;
-  height: auto;
-}
-
-/* -------------OUR SERVICES ------------------ */
-
-.services-section {
-  display: grid;
-  place-items: center;
-  row-gap: 5rem;
-  padding-block: 2em 5em;
-}
-
-.service-card-box {
-  display: grid;
-  gap: var(--default-gap);
-  width: 60%;
-}
-
-.card svg {
-  width: 5rem;
-  height: 5rem;
-  fill: var(--primary-color);
-}
-
-.card h3 {
-  text-transform: uppercase;
-  font-family: var(--heading-font);
-}
-
-.card {
-  text-align: center;
-  display: grid;
-  row-gap: 1rem;
-  background-color: var(--secondary-color);
-  padding: 1.5em 2em;
-  border-radius: 1rem;
-  box-shadow: 0 0 0 3px var(--primary-color),
-    0 1rem 2rem -0.5rem var(--primary-color);
-  position: relative;
-}
-
-/* ------------------EXPLORE SECTION--------------- */
-
-.explore {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 3.5em;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 6em 4em;
-  background-color: #1b2232;
-  color: var(--default-color);
-}
-
-.mini-gallery-box {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--default-gap);
-}
-
-.mini-gallery-box img {
-  width: 100%;
-  height: auto;
-  border-radius: 1rem;
-  box-shadow: var(--box-shadow-effect);
-}
-
-.explore-text-box {
-  color: var(--default-color);
-  /* width: 35%; */
-  display: grid;
-  gap: var(--default-gap);
-  text-align: center;
-}
-
-.explore-text-box h2 {
-  justify-self: center;
-}
 
 /* ----------------------FOOTER----------------------- */
 footer {
@@ -511,6 +409,7 @@ footer {
   align-items: center;
   gap: 5rem;
   text-align: center;
+  background-color: #e1dafa;
 }
 
 .footer-captions {
@@ -696,6 +595,7 @@ address a:hover,
   margin: 0;
 }
 
+
 @media only screen and (min-width: 37.5em) {
   .logo-box {
     width: 15rem;
@@ -734,58 +634,4 @@ address a:hover,
     text-align: center;
   }
 
-  .partners {
-    overflow: hidden;
-    white-space: nowrap;
-    padding-block: 2em;
-  }
-
-  .partners :last-child {
-    display: inline-block;
-  }
-
-  .partners:hover .partner-slide {
-    animation-play-state: paused;
-  }
-
-  .partner-slide {
-    display: inline-block;
-    animation: 25s slide infinite linear;
-  }
-
-  .partner-slide img {
-    object-fit: scale-down;
-    height: 5vh;
-    margin-inline: 4rem;
-  }
-
-  @keyframes slide {
-    from {
-      transform: translateX(0);
-    }
-
-    to {
-      transform: translateX(-100%);
-    }
-  }
-
-  .services-section {
-    display: grid;
-    place-items: center;
-    row-gap: 10rem;
-    padding-block: 5em 10em;
-  }
-
-  .service-card-box {
-    width: 85%;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--default-gap);
-  }
-
-  .card svg {
-    width: 5rem;
-    height: 5rem;
-  }
 }
