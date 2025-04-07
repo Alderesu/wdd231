@@ -33,17 +33,8 @@
     padding-block-end: 2rem;
   }
 
-  .join-page-body header, 
-  .directory-page-body header, 
-  .discover-page-body header {
-    gap: 3rem;
-    padding-inline: 2rem;
-    padding-block-end: 2rem;
-
-  }
-
   h1 {
-    font-size: 4.5rem;  
+    font-size: 4.5rem;
   }
 
   .menu-btn {
@@ -81,12 +72,12 @@
     grid-row: 2 / 3;
     grid-column: 1 / span 3;
     justify-self: center;
+
     gap: var(--default-gap);
   }
 
   .header-intro {
     text-align: left;
-    padding-bottom: 3em;
   }
 
   .logo-box {
@@ -131,8 +122,7 @@
   }
 
   .news-event-section {
-    padding-top: 0em;
-    padding-bottom: 3em;
+    padding-block: 10em;
   }
 
   .news-event-section-box {
@@ -144,6 +134,7 @@
   .news-box {
     grid-column: 1 / 3;
     grid-row: 1 / 4;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: min-content max-content max-content;
@@ -155,31 +146,63 @@
   .weather-box {
     color: var(--default-color);
     grid-column: 3 / 4;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
     text-align: center;
   }
 
-  .weather-forecast {
-    grid-row: 4/5;
-    grid-column: 1/4;
-    
+  .partner-slide {
+    flex-direction: row;
   }
 
-  .forecast {
-    width: 100%;
-    
+  .partner-slide img {
+    width: 20%;
   }
 
-  .main-day-box {
+  .services-section {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    margin: 10px;
-    column-gap: 10em;
-  }     
+    place-items: center;
+    row-gap: 10rem;
+    padding-block: 5em 10em;
+  }
 
+  .service-card-box {
+    width: 60%;
 
-  /* Footer */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--default-gap);
+  }
+
+  .card svg {
+    width: 5rem;
+    height: 5rem;
+    fill: var(--default-shade-2);
+  }
+
+  .card {
+    background-color: #fff;
+  }
+
+  .card:hover {
+    background-color: var(--secondary-color);
+  }
+
+  .card:hover svg {
+    fill: var(--primary-color);
+  }
+
+  .explore {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .mini-gallery-box {
+    width: 50%;
+  }
+
+  .explore-text-box {
+    width: 35%;
+  }
 
   footer:not(.copyright-box) {
     align-items: flex-start;
@@ -189,8 +212,90 @@
   }
 
   .footer-social-links:hover svg {
-    fill: white;
+    fill: var(--default-color);
   }
+
+            /* ----------------------------------------------------- */
+            /* ---------------------- DISCOVER PAGE SECTION --------------- */
+            /* ----------------------------------------------------- */
+            .discover-page-body header,
+            .join-page-body header,
+            .directory-page-body header {
+              padding-inline: 2rem;
+            }
+      
+            .discover-page-body nav,
+            .join-page-body nav,
+            .thankyou-page-body nav,
+            .directory-page-body nav {
+              grid-column: 3 / 5;
+              justify-self: self-end;
+              align-self: center;
+            }
+      
+            .info-section-grid {
+              display: grid;
+              grid-template-columns: repeat(5, 1fr);
+      
+            }
+      
+            .sidebar-box {
+              grid-column: 1 / 3;
+              grid-row: 1 / 3;
+              height: min-content;
+              grid-template-columns: 1fr;
+              justify-items: center;
+              padding-block: 3em;
+            }
+      
+            .map-box {
+              grid-column: 3 / 6;
+              grid-row: 1 / 2;
+            }
+      
+            .explore-photos-box {
+              grid-column: 3 / 6;
+              grid-row: 2 / 3
+            }
+      
+            .explore-photos-box picture {
+              width: 70%;
+      
+            }
+      
+            .explore-photos-box picture img {
+              transition: all .2s;
+            }
+      
+            .explore-photos-box picture img:hover {
+              box-shadow: 0 0 0,
+                0 1rem 2rem -.5rem var(--primary-color);
+              border-radius: 1.5rem 15rem;
+            }
+      
+            .sidebar-info,
+            .calender {
+              width: 80%;
+            }
+      
+            .calender .header .btns svg {
+              transition: all .2s;
+            }
+      
+            .calender .header .btns svg:hover {
+              transform: scale(1.1);
+              fill: var(--primary-color);
+              stroke: none;
+            }
+      
+            .days .day {
+              transition: all .2s;
+            }
+      
+            .days .day:not(.prev):not(.next):hover {
+              transform: scale(1.05);
+              background-color: var(--secondary-color);
+            }
 
   /* ----------------------------------------------------- */
   /* ---------------------- DIRECTORY PAGE SECTION --------------- */
