@@ -65,7 +65,7 @@ body {
 
 .join-page-body header, 
 .directory-page-body header, 
-.discover-page-body header {
+.discover-page-body header, .thankyou-page-body header {
   background-color: #1b2232;
   box-shadow: 0 10px 5px #44393267;
 }

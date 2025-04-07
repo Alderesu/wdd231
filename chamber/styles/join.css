@@ -170,7 +170,9 @@
 }
 
 .membership-card h2 {
-  text-align: center;
+  text-align: left;
+  font-size: 1em;
+  margin-top: 10px;
 }
 
 .membership-card button {
@@ -182,6 +184,8 @@
     padding-block: 0.75rem;
     padding-inline: 1.5rem;
     box-shadow: var(--box-shadow-effect);
+    margin-top: -30px;
+    margin-bottom: 20px;
 }
 
 .modal-close {
