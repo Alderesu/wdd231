@@ -1,0 +1,42 @@
+*:root {
+    --font-1: "Poppins", serif;
+    --font-2: "Inter", serif;
+
+    /* color schema */
+    --color-1: rgb(66, 66, 66);
+    --color-2: rgb(37, 37, 37);
+    --color-3: rgb(137, 243, 54);
+}
+
+body {
+    background: linear-gradient(-45deg, var(--color-1), var(--color-2));
+    color: white;
+}
+
+figure img {
+    width: 500px;
+}
+
+.wireframes {
+    display: flex;
+}
+
+h2, h1 {
+    font-family: var(--font-1);
+}
+
+h2 {
+    border: solid 2px var(--color-3);
+    display: inline;
+    padding: 10px;
+    border-radius: 30px;
+    background: var(--color-3);
+}
+
+p, figcaption {
+    font-family: var(--font-2);
+}
+
+figcaption {
+    background: black;
+}
