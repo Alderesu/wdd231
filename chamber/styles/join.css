@@ -3,8 +3,7 @@
 }
 
 .join-page-body .join-cta-text {
-  font-family: var(--paragraph-font);
-  font-style: italic;
+  font-family: var(--heading-font);
   padding: 0em 1.5em;
   justify-items: center;
 }
