@@ -24,6 +24,10 @@ function displayItems(places) {
         const thephoto = document.createElement('img')
         thephoto.src = `images/${x.photo_link}`
         thephoto.alt = x.name
+        thephoto.loading = "lazy"
+        // Add width/height to prevent layout shifts
+        thephoto.width = 400
+        thephoto.height = 300
         thefigure.appendChild(thephoto)
         thecard.appendChild(thefigure)
 

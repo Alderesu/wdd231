@@ -209,6 +209,7 @@
     font-size: 1.8rem;
   }
 
+  /* Hover effect for larger views only */
   #allplaces div img:hover {
     box-shadow: 0 0 50px #333;
     border-radius: 15px 150px;
