@@ -16,16 +16,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 const currentYear = new Date().getFullYear();
 const copyrightYear = document.getElementById('copyrightYear');
-copyrightYear.textContent = `©${currentYear} MovieFolio Project`
+copyrightYear.textContent = `©${currentYear} MiruTV Project`
 
 const lastModifiedDate = new Date(document.lastModified);
 const lastModified = document.getElementById('lastModified');
 lastModified.textContent = `Last Modification: ${lastModifiedDate.toLocaleDateString()}`;
 
 
-document.querySelector('.hero-button').addEventListener('click', function() {
-	document.querySelector('#tags').scrollIntoView({ behavior: 'smooth' });
-  });
 
 
 const API_KEY = "api_key=912d87e2800a27f86642f1feab042fa9";
@@ -88,30 +85,6 @@ const genres = [
 		id: 9648,
 		name: "Mystery",
 	}
-	// {
-	// 	id: 10749,
-	// 	name: "Romance",
-	// },
-	// {
-	// 	id: 878,
-	// 	name: "Science Fiction",
-	// },
-	// {
-	// 	id: 10770,
-	// 	name: "TV Movie",
-	// },
-	// {
-	// 	id: 53,
-	// 	name: "Thriller",
-	// },
-	// {
-	// 	id: 10752,
-	// 	name: "War",
-	// },
-	// {
-	// 	id: 37,
-	// 	name: "Western",
-	// },
 ];
 
 const main = document.getElementById("main");

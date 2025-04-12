@@ -19,7 +19,7 @@ html {
 body {
 	height: 100%;
 	/* background-color: var(--primary-color); */
-	background: black;
+	background: #121214;
 	font-family: "Nunito", sans-serif;
 	margin: 0;
 	background-repeat: no-repeat;
@@ -61,19 +61,7 @@ body {
 	width: 40%;
 }
 
-.hero-button {
-	position: absolute;
-	bottom: 250px;
-	left: 50px;
-	padding: 10px;
-	border-radius: 10px;
-	border: none;
-	background: #89f336;
-	color: white;
-	cursor: pointer;
-	font-size: 15px;
-	font-weight: bold;
-}
+
 
 header {
 	padding: 0.5rem;
@@ -81,7 +69,15 @@ header {
 	/* flex-wrap: wrap; */
 	align-items: center;
 	justify-content: space-between;
-	background: rgb(27, 27, 27);
+	background: #141414;
+}
+
+.menu-item.active a{
+    color: #89f336;
+}
+
+.menu-item:hover a {
+    color: #89f336;
 }
 
 .menu-container {
@@ -110,16 +106,13 @@ header {
 }
 
 .menu-item:hover a{
-    color: rgb(255, 74, 74);
+    color: #89f336;
 }
 
 .menu-container li  {
 	text-decoration: none;
 	list-style: none;
 }
-
-
-
 
 .logo {
 	width: 300px;
@@ -241,11 +234,10 @@ main {
 }
 
 #tags {
-	max-width: 500px;
-	width: 80%;
+
 	display: flex;
 	flex-wrap: wrap;
-	/* justify-content: center; */
+	justify-content: center;
 	align-items: center;
 	margin-left: 10px;
 }
@@ -253,7 +245,7 @@ main {
 .tag {
 	color: white;
 	padding: 10px 20px;
-	background-color: rgb(172, 18, 18);
+	background-color: #89f336;
 	border-radius: 5px;
 	margin: 5px;
 	display: inline-block;
@@ -432,14 +424,20 @@ main {
 footer {
     display: flex;
     justify-content: space-around;
-    background: rgb(33, 33, 33);
+    background: #141414;
     color: white;
     font: var(--fontsStyle1) var(--fontWeight3)16px var(--font1);
+	padding: 80px;
 }
 
 .footer-info-1 p{
     padding: 0;
     margin: 5px 10px;
+}
+
+svg {
+	height: 3rem;
+	width: 3rem;
 }
 
 .footer-info-2 p{
@@ -451,9 +449,18 @@ footer {
     font-weight: bold;
 }
 
-.social-media ion-icon{
-    font-size: 85px;
-    color: rgb(130, 130, 130);
+.social-media {
+	list-style: none;
+}
+
+.social-media a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-media svg {
+    font-size: 50px;
+    fill: #89f336;
 }
 
 .attributions {
@@ -466,7 +473,7 @@ footer {
         display: block;
     }
 
-    .social-media ion-icon{
+    .social-media svg{
         font-size: 50px;
         color: rgb(130, 130, 130);
     }

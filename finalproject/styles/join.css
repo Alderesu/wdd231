@@ -6,12 +6,6 @@
     margin: 0;
 }
 
-/* ---------------------- menu items */
-
-.menu-item.active a{
-    color: rgb(255, 33, 33);
-}
-
 /* ---------------------- background image  */
 .background-image {
     width: 100vw;
