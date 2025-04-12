@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Brylle Dann Tabon">
+		<meta name="description" content="A movie library website for exploring new shows">
+
+		<!-- social media meta -->
+		<meta property="og:title" content="Brylle Dann Tabon | MovieFolio">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://raw.githubusercontent.com/georgiecalamity/wdd231/refs/heads/main/finalProject/images/movieIco.webp">
+		<meta property="og:url" content="https://georgiecalamity.github.io/wdd231/finalProject/homepage.html">
+
+		<!-- styles link -->
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="icon" href="images/movieIco.webp">
+
+		<!-- ion icon link -->
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+		<!-- font link links -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+		<title>MovieFolio</title>
+	</head>
+	<body>
+		<header>
+			<div class="logos">
+				<a href="#"><img class="logo" src="images/moviefolioLogo.png" alt="MovieFolio Logo"></a>
+		
+				<form id="form">
+					<ion-icon name="search-outline" class="search-icon"></ion-icon>
+					<input type="text" placeholder="Search for movie" id="search" class="search">
+				</form>
+				<button id="burger-button">&#9776;</button>
+			</div>
+
+			
+			<div>
+				<nav>
+					<ul class="menu-container">
+						<li class="menu-item"><a href="https://georgiecalamity.github.io/wdd231/finalProject/homepage.html">HOME</a></li>
+						<li class="menu-item  active"><a href="https://georgiecalamity.github.io/wdd231/finalProject/index.html">MOVIES</a></li>
+						<li class="menu-item"><a href="https://georgiecalamity.github.io/wdd231/finalProject/join.html">JOIN</a></li>
+						<li class="menu-item"><a href="https://georgiecalamity.github.io/wdd231/finalProject/contactPage.html">CONTACT US</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="background-img-container">
+			<img src="images/hero-img.webp" alt="background-img" class="background-img" loading="lazy">
+			<div class="background-img-overlay"></div>
+			<button class="hero-button">WATCH</button>
+			<p class="hero-text">Welcome to MovieFolio, your ultimate destination
+				 for discovering the best in cinema! Whether you're a die-hard movie buff or just looking for something new to watch, we've got you covered.</p>
+		</div>
+
+		<h2 class="filter-header">FILTER</h2>
+		<div id="tags"></div>
+		<h2 class="header-1">NEW RELEASES</h2>
+		<div id="myNav" class="overlay">
+			<!-- Button to close the overlay navigation -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">✖</a>
+
+			<!-- Overlay content -->
+			<div class="overlay-content" id="overlay-content"></div>
+
+			<a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow"><ion-icon name="chevron-back-outline"></ion-icon></a>
+
+			<a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow"><ion-icon name="chevron-forward-outline"></ion-icon></a>
+		</div>
+
+		<main id="main"></main>
+
+		<div class="pagination">
+			<div class="page" id="prev"><ion-icon name="chevron-back-outline"></ion-icon> Prev</div>
+			<div class="current" id="current">1</div>
+			<div class="page" id="next">Next <ion-icon name="chevron-forward-outline"></ion-icon></div>
+		</div>
+
+
+		<footer>
+			<div class="footer-info-1">
+				<a href="https://georgiecalamity.github.io/wdd231/finalProject/attributions.html" class="attributions">Attributions</a>
+				<p class="footer-title">MovieFolio Class Project</p>
+				<p>Ormoc City Leyte</p>
+				<p>Brylle Dann Tabon</p>
+				<p>(111) 222-3333</p>
+			</div>
+	
+			<div class="social-media">
+
+				<a href="https://www.linkedin.com/in/brylle-dann-tabon-022158256/">
+					<ion-icon name="logo-linkedin"></ion-icon>
+				</a>
+				<a href="https://github.com/georgiecalamity">
+					<ion-icon name="logo-github"></ion-icon>
+				</a>
+			</div>
+	
+			<div class="footer-info-2">
+				
+				<p>WDD 231 Class Project</p>
+				<p id="copyrightYear"></p>
+				<p id="lastModified"></p>
+			</div>
+		</footer>
+
+		<script src="javascript/script.js"></script>
+	</body>
+</html>
