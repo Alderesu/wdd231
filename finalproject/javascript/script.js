@@ -1,16 +1,23 @@
+// Navigation wayfinding functionality
 document.addEventListener('DOMContentLoaded', ()=>{
+    // Get current page path
+    const currentPath = window.location.pathname.split('/').pop();
+    
+    // Set active state for navigation
+    const menuItems = document.querySelectorAll('.menu-item');
+    menuItems.forEach(item => {
+        const link = item.querySelector('a');
+        const href = link.getAttribute('href').split('/').pop();
+        item.classList.toggle('active', currentPath === href);
+    });
+
+    // Burger menu toggle
     const menuContainer = document.querySelector('.menu-container');
     const burgerButton = document.querySelector('#burger-button');
 
     burgerButton.addEventListener('click', ()=>{
         menuContainer.classList.toggle('open');
-
-        if (menuContainer.classList.contains('open')) {
-            burgerButton.textContent = '✖';
-        }
-        else {
-            burgerButton.textContent = '☰';
-        }
+        burgerButton.textContent = menuContainer.classList.contains('open') ? '✖' : '☰';
     });
 });
 
